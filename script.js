@@ -1,32 +1,31 @@
-// Dynamic Year
-document.getElementById("year").textContent = new Date().getFullYear();
+const year = document.getElementById("year");
+if (year) {
+  year.textContent = String(new Date().getFullYear());
+}
 
-// Theme Toggle Logic
-const btn = document.getElementById("themeBtn");
+const mode = document.body.dataset.mode;
 
-btn.addEventListener("click", () => {
-  document.body.classList.toggle("professional");
-  document.body.classList.toggle("founder");
+if (mode === "professional") {
+  const data = {
+    greeting: "Software Developer",
+    tagline: "Software developer with experience in cross-platform and web application development.",
+    techStackText: "Flutter, Java, TypeScript, SQL, Supabase, Responsive Web Development",
+    project1: "Rental marketplace app built with structured backend integration and scalable architecture.",
+    project2: "Responsive web projects focused on maintainability, accessibility, and performance.",
+    interestsText: "Basketball, Gym, Running, Volleyball"
+  };
 
-  const isFounder = document.body.classList.contains("founder");
+  const greeting = document.getElementById("greeting");
+  const tagline = document.getElementById("tagline");
+  const techStackText = document.getElementById("techStackText");
+  const project1 = document.getElementById("project1");
+  const project2 = document.getElementById("project2");
+  const interestsText = document.getElementById("interestsText");
 
-  if (isFounder) {
-    document.getElementById("greeting").textContent =
-      "Future Billionaire Tech Founder";
-    document.getElementById("tagline").textContent =
-      "Somebody who's tryna be better everyday 🚀";
-    document.getElementById("project1").textContent =
-      "Building scalable rental systems to dominate the market.";
-    document.getElementById("project2").textContent =
-      "Creating elite animated websites that stand out.";
-  } else {
-    document.getElementById("greeting").textContent =
-      "Software Developer";
-    document.getElementById("tagline").textContent =
-      "Passionate developer focused on continuous growth.";
-    document.getElementById("project1").textContent =
-      "Developed a rental platform using Flutter and Supabase.";
-    document.getElementById("project2").textContent =
-      "Designed responsive websites with modern UI practices.";
-  }
-});
+  if (greeting) greeting.textContent = data.greeting;
+  if (tagline) tagline.textContent = data.tagline;
+  if (techStackText) techStackText.textContent = data.techStackText;
+  if (project1) project1.textContent = data.project1;
+  if (project2) project2.textContent = data.project2;
+  if (interestsText) interestsText.textContent = data.interestsText;
+}
