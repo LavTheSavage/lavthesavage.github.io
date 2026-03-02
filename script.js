@@ -3,6 +3,20 @@ if (year) {
   year.textContent = String(new Date().getFullYear());
 }
 
+const toggle = document.getElementById("themeToggle");
+
+if (toggle) {
+  toggle.addEventListener("click", () => {
+    const mode = document.body.getAttribute("data-mode");
+
+    if (mode === "professional") {
+      window.location.href = "chill-home.html";
+    } else {
+      window.location.href = "index.html";
+    }
+  });
+}
+
 const mode = document.body.dataset.mode;
 
 if (mode === "professional") {
