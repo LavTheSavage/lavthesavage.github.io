@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --pro-bg: #f3f5f8;
+  --pro-text: #121826;
+  --pro-muted: #5d6472;
+  --pro-card: #ffffff;
+  --pro-border: #d9dee7;
+  --pro-accent: #1f4fff;
+
+  --chill-text: #f4f9ff;
+  --chill-accent: #4f46e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.site-footer {
+  padding: 28px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}

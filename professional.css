@@ -1,0 +1,97 @@
+.professional-page {
+  font-family: 'Inter', sans-serif;
+  color: var(--pro-text);
+  background: linear-gradient(180deg, #fbfdff 0%, var(--pro-bg) 100%);
+}
+
+/* Nav */
+.top-nav {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Hero */
+.pro-hero {
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 44px 20px 36px;
+}
+
+.pro-hero h2 {
+  font-size: 2.2rem;
+  margin-top: 20px;
+}
+
+.pro-hero .meta {
+  color: var(--pro-muted);
+  margin-top: 8px;
+}
+
+/* Sections */
+.pro-section {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 56px 20px;
+  position: relative;
+}
+
+.pro-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0,0,0,0.06),
+    transparent
+  );
+}
+
+.pro-section h2 {
+  font-size: 1.9rem;
+  margin-bottom: 26px;
+}
+
+.pro-section h2::after {
+  content: "";
+  width: 46px;
+  height: 3px;
+  background: var(--pro-accent);
+  margin-top: 8px;
+  display: block;
+  border-radius: 2px;
+}
+
+/* Grid */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* Cards */
+.pro-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
+  border: 1px solid var(--pro-border);
+  border-radius: 16px;
+  padding: 24px;
+  transition: 0.3s ease;
+}
+
+.pro-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(31,79,255,0.14);
+}

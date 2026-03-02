@@ -1,0 +1,89 @@
+.chill-page {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--chill-text);
+  background: radial-gradient(
+    circle at 20% 20%,
+    #325d8c 0%,
+    #102033 55%,
+    #070f1a 100%
+  );
+}
+
+/* Hero */
+.chill-hero-bg {
+  min-height: 58vh;
+  background-image:
+    linear-gradient(to bottom, rgba(4,15,28,.55), rgba(4,15,28,.85)),
+    url('me.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Nav */
+.chill-nav {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Section spacing */
+.chill-section {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 44px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* Horizontal layer */
+.layer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.chill-card {
+  width: clamp(230px, 26vw, 270px);
+  padding: 20px 22px;
+  background: rgba(255,255,255,0.075);
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.14);
+  transition: 0.25s ease;
+}
+
+.chill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.24);
+}
+
+/* Pixel Icon */
+.pixel-icon {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  animation: pixelBounce 1.6s infinite;
+}
+
+@keyframes pixelBounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+/* Variants */
+.pixel-card { border-color: rgba(255,77,242,0.55); }
+.edu-card   { border-color: rgba(255,204,0,0.55); }
+
+/* Responsive */
+@media (max-width: 760px) {
+  .chill-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
