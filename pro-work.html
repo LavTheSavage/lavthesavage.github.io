@@ -4,103 +4,141 @@
   <meta charset="UTF-8">
   <title>Samyog Rai | Work</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/professional.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/professional.css">
   <script defer src="script.js"></script>
 </head>
 
 <body class="professional-page" data-mode="professional">
 
 <nav class="top-nav">
-  <h1 class="logo" id="themeToggle">Samyog Rai</h1>
-  <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+  <h1 class="logo"><a href="index.html" style="text-decoration:none;color:inherit">Samyog Rai</a></h1>
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="pro-work.html">Work</a>
     <a href="pro-contact.html">Contact</a>
   </div>
 </nav>
-<section class="pro-section">
-  <h2>Technical Skills</h2>
 
-  <ul class="tech-list">
-    <li><i class="fa-brands fa-java"></i>Java</li>
-    <li><i class="fa-brands fa-flutter"></i> Flutter (Cross-platform Development)</li>
-    <li><i class="fa-brands fa-js"></i> JavaScript</li>
-    <li><i class="fa-brands fa-html5"></i> HTML5</li>
-    <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
-    <li><i class="fa-solid fa-database"></i> SQL</li>
-  </ul>
+<!-- SKILLS -->
+<section class="pro-section">
+  <div class="section-header">
+    <span class="section-label">01</span>
+    <h2>Technical Skills</h2>
+  </div>
+  <div class="tech-grid">
+    <div class="tech-item"><i class="fa-brands fa-java"></i> Java</div>
+    <div class="tech-item"><i class="fa-brands fa-flutter"></i> Flutter</div>
+    <div class="tech-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+    <div class="tech-item"><i class="fa-brands fa-html5"></i> HTML5</div>
+    <div class="tech-item"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+    <div class="tech-item"><i class="fa-solid fa-database"></i> SQL</div>
+  </div>
 </section>
 
-<section class="pro-section">
-  <h2>UI / UX & Design</h2>
+<div class="section-divider"><hr></div>
 
-  <ul class="tech-list">
-    <li><i class="fa-brands fa-figma"></i> UI/UX Design (Figma – Wireframes & Prototypes)</li>
-    <li><i class="fa-solid fa-pen-ruler"></i> Canva (Visual Content & Branding)</li>
-    <li><i class="fa-solid fa-image"></i> Adobe Photoshop (Intermediate Level)</li>
-    <li><i class="fa-solid fa-layer-group"></i> Responsive Layout & User Flow Design</li>
-  </ul>
+<!-- UI / UX -->
+<section class="pro-section">
+  <div class="section-header">
+    <span class="section-label">02</span>
+    <h2>UI / UX & Design</h2>
+  </div>
+  <div class="tech-grid">
+    <div class="tech-item"><i class="fa-brands fa-figma"></i> Figma</div>
+    <div class="tech-item"><i class="fa-solid fa-pen-ruler"></i> Canva</div>
+    <div class="tech-item"><i class="fa-solid fa-image"></i> Photoshop</div>
+    <div class="tech-item"><i class="fa-solid fa-layer-group"></i> Responsive Design</div>
+  </div>
 </section>
 
+<div class="section-divider"><hr></div>
+
+<!-- PROJECTS -->
 <section class="pro-section">
-  <h2>Projects</h2>
-
-  <div class="project-card">
-    <h3>
-      Rental Marketplace App
-      <a href="https://github.com/LavTheSavage/Project-4th-sem" class="github-link" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
-    </h3>
-    <p>
-      Cross-platform Flutter application featuring authentication,
-      search filters, ratings, time-based rentals, and structured backend integration.
-    </p>
+  <div class="section-header">
+    <span class="section-label">03</span>
+    <h2>Projects</h2>
   </div>
 
-  <div class="project-card">
-    <h3>
-  Variety of website demos
-      <a href="https://github.com/LavTheSavage" class="github-link" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
-    </h3>
-    <p>
-        Interactive web demos focused on motion, storytelling, and UI experiments.
-    </p>
-  </div>
+  <div class="projects-list">
 
+    <!-- Project 1: Rental Marketplace App -->
+    <div class="project-card">
+      <div class="project-info">
+        <span class="project-tag">Flutter · Mobile</span>
+        <h3>Rental Marketplace App</h3>
+        <p>
+          Cross-platform Flutter application featuring authentication,
+          search filters, ratings, time-based rentals, and structured backend integration.
+        </p>
+      </div>
+      <div class="project-actions">
+        <a href="#" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+        </a>
+        <a href="https://github.com/LavTheSavage/Project-4th-sem" target="_blank" class="btn btn-outline">
+          <i class="fa-brands fa-github"></i> Source Code
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 2: Web Demos (2 buttons) -->
+    <div class="project-card">
+      <div class="project-info">
+        <span class="project-tag">HTML · CSS · JS</span>
+        <h3>Web Demos & Experiments</h3>
+        <p>
+          A variety of interactive web demos focused on motion, visual storytelling,
+          and creative UI experiments.
+        </p>
+      </div>
+      <div class="project-actions">
+        <a href="#" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> View Website
+        </a>
+        <a href="https://github.com/LavTheSavage" target="_blank" class="btn btn-outline">
+          <i class="fa-brands fa-github"></i> Source Code
+        </a>
+      </div>
+    </div>
+
+  </div>
 </section>
 
+<div class="section-divider"><hr></div>
+
+<!-- ADDITIONAL EXPERIENCE -->
 <section class="pro-section">
-  <h2>Additional Experience</h2>
-
-  <div class="project-card">
-    <h3>Substitute Basketball Coach</h3>
-    <p>
-      Assisted in organizing training sessions, mentoring students,
-      and improving teamwork, discipline, and performance strategies.
-    </p>
+  <div class="section-header">
+    <span class="section-label">04</span>
+    <h2>Experience</h2>
   </div>
 
-  <div class="project-card">
-    <h3>Student Tutor</h3>
-    <p>
-      Provided academic tutoring support to students,
-      strengthening foundational understanding and problem-solving skills.
-    </p>
+  <div class="exp-list">
+    <div class="exp-item">
+      <span class="exp-role">Substitute Basketball Coach</span>
+      <p class="exp-desc">Organized training sessions, mentored students, and improved teamwork,
+        discipline, and performance strategies.</p>
+    </div>
+    <div class="exp-item">
+      <span class="exp-role">Student Tutor</span>
+      <p class="exp-desc">Provided academic support to students, strengthening foundational
+        understanding and problem-solving skills.</p>
+    </div>
   </div>
-
 </section>
+
 <footer class="site-footer">
-  &copy; <span id="year"></span> Samyog Rai
+  <span>&copy; <span id="year"></span> Samyog Rai</span>
+  <div class="footer-right">
+    <a href="index.html">Home</a>
+    <a href="pro-contact.html">Contact</a>
+  </div>
 </footer>
 
 </body>
