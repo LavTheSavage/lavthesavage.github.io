@@ -299,3 +299,19 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     link.style.color = 'var(--pro-text)';
   }
 });
+
+// Scroll-reveal for sections
+const revealEls = document.querySelectorAll(
+  '.pro-section, .project-card, .tech-item, .exp-item'
+);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+revealEls.forEach(el => observer.observe(el));
